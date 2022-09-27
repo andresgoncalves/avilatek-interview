@@ -1,6 +1,7 @@
 /* eslint-disable global-require */
 /* eslint-disable import/no-extraneous-dependencies */
 
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     './pages/**/*.{js,jsx,ts,tsx}',
@@ -9,6 +10,10 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
+    fontFamily: {
+      body: 'Rubik',
+      title: 'Spectral',
+    },
     screens: {
       sm: '640px',
       md: '768px',
@@ -23,6 +28,12 @@ module.exports = {
           300: '#454545',
           400: '#2B2B2B',
           500: '#121212',
+          green: {
+            500: '#C8EA75',
+          },
+          gray: {
+            500: '#4D4D4D',
+          }
         },
         secondary: {
           100: '#DCFEEA',
