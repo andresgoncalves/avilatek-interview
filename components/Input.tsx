@@ -6,7 +6,7 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   className?: string
 }
 
-export default function Input({ label, icon, className, ...rest }: InputProps) {
+export default function Input({ label, icon, className = '', ...rest }: InputProps) {
   return (
     <label className={`flex flex-col gap-1 ${className}`}>
       <div className="text-xs">{label}</div>
